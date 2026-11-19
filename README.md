@@ -1,3 +1,5 @@
+> This repository is archived. Development continues in the For-Each package monorepo; version 0.1.0 remains available on nuget.org.
+
 # ForEach.UI.Html
 
 Safe HTML and markdown rendering for UIs, as two NuGet packages from one repository. Targets net8.0 and
