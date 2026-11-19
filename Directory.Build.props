@@ -1,0 +1,27 @@
+<Project>
+
+  <PropertyGroup>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsAsErrors>$(WarningsAsErrors);CA1307</WarningsAsErrors>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!-- Package metadata shared by everything packable in this repository. The version itself is
+         not set here: the publish workflow passes it from the tag (v1.2.3 -> 1.2.3), and the
+         csproj's <Version> is only the fallback for a local `dotnet pack`. -->
+    <Authors>For-Each Smederevo</Authors>
+    <Company>For-Each Smederevo</Company>
+    <Copyright>Copyright © For-Each Smederevo</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <ContinuousIntegrationBuild Condition="'$(GITHUB_ACTIONS)' == 'true'">true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+
+</Project>

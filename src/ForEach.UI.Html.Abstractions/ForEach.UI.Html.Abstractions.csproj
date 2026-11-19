@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net10.0</TargetFrameworks>
+    <RootNamespace>ForEach.UI.Html</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <PackageId>ForEach.UI.Html.Abstractions</PackageId>
+    <Version>0.1.0</Version>
+    <Description>IHtmlRenderer: the contract for turning untrusted HTML and markdown into safe HTML. No dependencies, so a UI can reference it without pulling in a renderer.</Description>
+    <PackageTags>Html;Markdown;Sanitizer;Blazor;Abstractions</PackageTags>
+    <PackageProjectUrl>https://github.com/foreach-rs/ForEach.UI.Html</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <EnablePackageValidation>true</EnablePackageValidation>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>

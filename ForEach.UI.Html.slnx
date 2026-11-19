@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ForEach.UI.Html.Abstractions/ForEach.UI.Html.Abstractions.csproj" />
+    <Project Path="src/ForEach.UI.Html/ForEach.UI.Html.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/ForEach.UI.Html.Tests/ForEach.UI.Html.Tests.csproj" />
+  </Folder>
+</Solution>

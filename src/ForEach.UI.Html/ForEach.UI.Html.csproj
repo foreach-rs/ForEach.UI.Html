@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net10.0</TargetFrameworks>
+    <RootNamespace>ForEach.UI.Html</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <PackageId>ForEach.UI.Html</PackageId>
+    <Version>0.1.0</Version>
+    <Description>SafeHtmlRenderer: Markdig and an allow-list HtmlSanitizer behind IHtmlRenderer. Renders markdown with GitHub-style heading ids and sanitizes untrusted HTML.</Description>
+    <PackageTags>Html;Markdown;Markdig;HtmlSanitizer;XSS;Blazor</PackageTags>
+    <PackageProjectUrl>https://github.com/foreach-rs/ForEach.UI.Html</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <EnablePackageValidation>true</EnablePackageValidation>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlSanitizer" />
+    <PackageReference Include="Markdig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ForEach.UI.Html.Abstractions\ForEach.UI.Html.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>
